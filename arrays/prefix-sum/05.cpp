@@ -15,14 +15,14 @@
             3   2   7  6  -2
 
     pse:    3   3   10 10  8
-    pso:    0   2   2  8   8 
+    pso:    0   2   2  8   8
 
     after deleting 2:
-            0   1   2  3   4   
+            0   1   2  3   4
             4   3   7  6  -2
 
     pse:    4   4   11 11  9
-    pso:    0   3   3   9  9 
+    pso:    0   3   3   9  9
 
     after deleting 3:
 
@@ -59,6 +59,8 @@
 #include <vector>
 using namespace std;
 
+// TC: O(N)
+// SC: O(N^2)
 
 int solve1(vector<int> &arr) {
 
@@ -98,7 +100,7 @@ int solve1(vector<int> &arr) {
     if (even_sum == odd_sum) {
 
       count++;
-    //   cout<<"index: " <<i <<" , sum: "<< even_sum <<'\n';
+      //   cout<<"index: " <<i <<" , sum: "<< even_sum <<'\n';
     }
   }
 
@@ -109,7 +111,7 @@ int main() {
 
   vector<int> arr = {4, 3, 2, 7, 6, -2};
 
-  cout<< solve1(arr) << '\n';
+  cout << solve1(arr) << '\n';
 
   return 0;
 }
